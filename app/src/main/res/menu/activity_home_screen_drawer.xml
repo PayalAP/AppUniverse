@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/shopkeeper"
+            android:icon="@drawable/searchshopkeeper"
+            android:title="Search Shopkeeper" />
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/notification"
+            android:title="Notification" />
+        <item
+            android:id="@+id/send_mail"
+            android:icon="@drawable/sendmail"
+            android:title="Send Mail" />
+
+            <item
+                android:id="@+id/my_transaction"
+                android:icon="@drawable/mytransaction"
+                android:title="My Transaction" />
+            <item
+                android:id="@+id/card_block"
+                android:icon="@drawable/cardblock"
+                android:title="Card Block" />
+        <item
+                android:id="@+id/contactus"
+            android:icon="@drawable/contactus"
+            android:title="Contact Us"/>
+    </group>
+
+
+</menu>

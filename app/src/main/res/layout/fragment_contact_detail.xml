@@ -1,0 +1,286 @@
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    -
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/toolbar_height"
+        android:elevation="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+    </android.support.v7.widget.Toolbar>
+    -
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        -
+
+        <android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guidelineToolbarHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.27"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="279dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guidelineToolbarHeight2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.66"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="646dp" />
+
+            <ImageView
+                android:id="@+id/backgroundImage"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/loginbackground"
+                app:layout_constraintBottom_toTopOf="@+id/guidelineToolbarHeight"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/guidelineImageEnd"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guidelineImageStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.31"
+                tools:layout_editor_absoluteX="186dp"
+                tools:layout_editor_absoluteY="25dp" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/guidelineImageEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="1.0"
+                tools:layout_editor_absoluteX="601dp"
+                tools:layout_editor_absoluteY="25dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/ProfileImageMarginTop"
+                android:src="@mipmap/profile_pic"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintHorizontal_bias="0.196"
+                app:layout_constraintLeft_toLeftOf="@+id/guidelineImageStart"
+                app:layout_constraintRight_toLeftOf="@+id/guidelineImageEnd"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="258dp"
+                android:layout_height="41dp"
+                android:layout_marginLeft="@dimen/ProfileTextMarginLeft"
+                android:layout_marginStart="@dimen/ProfileTextMarginStart"
+                android:gravity="center"
+                android:text="priya Thakur"
+                android:textSize="@dimen/ProfileNameTextSize"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.486"
+                app:layout_constraintLeft_toRightOf="@+id/imageView"
+                app:layout_constraintRight_toLeftOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/EmailImageMarginLeft1"
+                android:layout_marginStart="@dimen/EmailImageMarginStart"
+                android:layout_marginTop="@dimen/EmailImageMarginTop"
+                android:src="@drawable/mail"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/EmailTextMarginEnd"
+                android:layout_marginLeft="@dimen/EmailTextMarginLeft2"
+                android:layout_marginRight="@dimen/EmailTextMarginRight"
+                android:layout_marginStart="@dimen/EmailTextMarginStart"
+                android:layout_marginTop="@dimen/EmailTextMarginTop"
+                android:text="Email"
+                android:textSize="@dimen/EmailTextSize"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toRightOf="@+id/imageView2"
+                app:layout_constraintRight_toLeftOf="@+id/guidelineImageEnd"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/EmailLongTextMarginEnd"
+                android:layout_marginLeft="@dimen/EmailLongTextMarginLeft"
+                android:layout_marginRight="@dimen/EmailLongTextMarginRight"
+                android:layout_marginStart="@dimen/MessageLongTextMarginStart"
+                android:layout_marginTop="@dimen/Email1TextMarginTop"
+                android:text="Email@gmail.com"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@+id/textView"
+                app:layout_constraintRight_toLeftOf="@+id/guidelineImageEnd"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="@dimen/ViewMarginEnd"
+                android:layout_marginLeft="@dimen/ViewMarginLeft"
+                android:layout_marginRight="@dimen/ViewMarginRight"
+                android:layout_marginStart="@dimen/ViewMarginStart"
+                android:layout_marginTop="@dimen/MarginTopView1"
+                android:background="@color/colorDarkLine"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/PhoneLongTextMarginLeft"
+                android:layout_marginStart="@dimen/MessageLongTextMarginStart"
+                android:layout_marginTop="@dimen/PhoneLongTextMargTop"
+                android:text="@string/PhoneNumber"
+                android:textSize="@dimen/EmailTextSize"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@+id/textView"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/PhoneImageMarginTop"
+                android:src="@drawable/phone"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/PhoneTextMarginend"
+                android:layout_marginLeft="@dimen/PhoneTextMarginLeft"
+                android:layout_marginRight="@dimen/PhoneTextMarginRight"
+                android:layout_marginStart="1sp"
+                android:layout_marginTop="@dimen/PhoneTextMarginTop"
+                android:text="Phone"
+                android:textSize="@dimen/EmailTextSize"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="@+id/textView"
+                app:layout_constraintRight_toLeftOf="@+id/guidelineImageEnd"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/MessageTextMarginEnd"
+                android:layout_marginLeft="@dimen/MessageTextMarginleft"
+                android:layout_marginRight="@dimen/MessageTextMarginRight"
+                android:layout_marginStart="0sp"
+                android:layout_marginTop="@dimen/MessageTextMarginTop"
+                android:text="Message"
+                android:textSize="@dimen/EmailTextSize"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="@+id/textView2"
+                app:layout_constraintRight_toRightOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginEnd="@dimen/ViewMarginRight"
+                android:layout_marginLeft="@dimen/ViewMarginLeft"
+                android:layout_marginRight="@dimen/ViewMarginRight"
+                android:layout_marginStart="@dimen/ViewMarginLeft"
+                android:layout_marginTop="@dimen/MarginTopView2"
+                android:background="@color/colorDarkLine"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/MessageImageMargTop"
+                android:src="@drawable/message"
+                app:layout_constraintLeft_toLeftOf="@+id/imageView3"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/MessageLongTextMarginEnd"
+                android:layout_marginLeft="@dimen/MessageLongTextMarginLeft"
+                android:layout_marginRight="@dimen/MessageLongTextMarginRight"
+                android:layout_marginStart="@dimen/MessageLongTextMarginStart"
+                android:layout_marginTop="@dimen/MessageLongTextMarginTop"
+                android:gravity="center_vertical"
+                android:maxLines="5"
+                android:text="@string/MessageLongText"
+                android:textSize="@dimen/EmailTextSize"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="@+id/textView"
+                app:layout_constraintRight_toRightOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <Button
+                android:id="@+id/send_btn"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="@dimen/ButtonMarginEnd"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="@dimen/ButtonMarginStart"
+                android:layout_marginTop="@dimen/SendButtonMarginTop"
+                android:background="@color/colorButton"
+                android:text="SEND"
+                app:layout_constraintHorizontal_bias="0.016"
+                app:layout_constraintLeft_toLeftOf="@+id/textView6"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

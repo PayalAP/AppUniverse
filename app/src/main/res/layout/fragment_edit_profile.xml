@@ -1,0 +1,136 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ragasoft.appuniverse.Fragment.EditProfileFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+
+        android:background="@color/base_app_color"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="10dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="@dimen/userImage_height_width"
+        android:layout_height="@dimen/userImage_height_width"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/margin_top_from_image"
+        android:src="@drawable/userblack"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout_first_name"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_edit_profile" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout_first_name"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/text_input_layout_height"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="@dimen/margin_top_from_input_layout"
+        android:backgroundTint="@color/light_background_color"
+        app:hintTextAppearance="@style/EditTextHint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/user_image"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_edit_profile">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/light_background_color"
+            android:hint="First Name"
+            android:textColor="@color/black_color"
+            android:textCursorDrawable="@color/light_background_color" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout_last_name"
+        android:backgroundTint="@color/light_background_color"
+        app:hintTextAppearance="@color/light_background_color"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/text_input_layout_height"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="@dimen/margin_top_between_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/user_img"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_first_name">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/last_name"
+            android:textCursorDrawable="@color/light_background_color"
+            android:backgroundTint="@color/light_background_color"
+            android:textColor="@color/black_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Last Name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout_land_mark"
+        android:backgroundTint="@color/light_background_color"
+        app:hintTextAppearance="@color/light_background_color"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/text_input_layout_height"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="@dimen/margin_top_between_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/user_imge"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_last_name">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/land_mark"
+            android:textCursorDrawable="@color/light_background_color"
+            android:backgroundTint="@color/light_background_color"
+            android:textColor="@color/black_color"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Land Mark" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/user_img"
+        android:layout_width="@dimen/userImage_height_width"
+        android:layout_height="@dimen/userImage_height_width"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/margin_top_between_images"
+        android:src="@drawable/userblack"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout_last_name"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/user_image" />
+
+    <ImageView
+        android:id="@+id/user_imge"
+        android:layout_width="@dimen/userImage_height_width"
+        android:layout_height="@dimen/userImage_height_width"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="@dimen/margin_top_from_last_image"
+        android:src="@drawable/userblack"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout_land_mark"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/user_img" />
+
+</android.support.constraint.ConstraintLayout>
