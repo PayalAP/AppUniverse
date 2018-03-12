@@ -46,6 +46,7 @@ public class HomeScreenActivity extends AppCompatActivity implements NavigationV
     ContactDetailFragment contactDetailFragment;
     TextView rupee_symbol;
     FragmentManager fm;
+    String an;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
